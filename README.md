@@ -1,22 +1,56 @@
 # Terraform AWS EC2
 
-Basic Terraform project for provisioning an AWS EC2 instance.
+Basic Infrastructure as Code project for provisioning an AWS EC2 instance using Terraform.
 
 ## Stack
 
 - Terraform
+- AWS Provider
 - AWS EC2
 - Infrastructure as Code (IaC)
+- AWS CLI
 
 ## Features
 
 - AWS provider configuration
-- EC2 instance resource
+- EC2 instance resource definition
 - Terraform init and plan workflow
+- Basic cloud infrastructure provisioning
+- Version-controlled infrastructure code
+
+## Project Structure
+
+```text
+.
+├── main.tf
+├── README.md
+├── .gitignore
+└── .terraform.lock.hcl
+```
 
 ## Usage
 
+Initialize Terraform:
+
 ```bash
 terraform init
+```
+
+Preview planned infrastructure changes:
+
+```bash
 terraform plan
 ```
+
+## What I Learned
+
+- Basic Terraform workflow
+- AWS provider configuration
+- EC2 provisioning basics
+- Infrastructure as Code fundamentals
+- GitHub version control for infrastructure code
+
+## Related Project
+
+- Multi App NGINX Platform:
+  https://github.com/kgil0/multi-app-nginx
