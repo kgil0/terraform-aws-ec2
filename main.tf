@@ -1,10 +1,10 @@
 provider "aws" {
-	region = "eu-central-1"
+	region = var.aws_region
 }
 
 resource "aws_instance" "terraform_test" {
-	ami     = "ami-0e872aee57663ae2d"
-	instance_type = "t3.micro"
+	ami     = var.ami_id
+	instance_type = var.instance_type
 
 	tags = {
 		Name = "terraform-test"
