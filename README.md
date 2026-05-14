@@ -17,16 +17,7 @@ Basic Infrastructure as Code project for provisioning an AWS EC2 instance using 
 - Terraform init and plan workflow
 - Basic cloud infrastructure provisioning
 - Version-controlled infrastructure code
-
-## Project Structure
-
-```text
-.
-├── main.tf
-├── README.md
-├── .gitignore
-└── .terraform.lock.hcl
-```
+ 
 
 ## Usage
 
