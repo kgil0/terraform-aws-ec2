@@ -54,3 +54,30 @@ terraform plan
 
 - Multi App NGINX Platform:
   https://github.com/kgil0/multi-app-nginx
+
+## Project Structure
+
+```text
+.
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── terraform.tfvars.example
+├── .gitignore
+└── README.md
+```
+
+## Terraform Workflow
+
+```bash
+terraform init
+terraform validate
+terraform plan
+```
+
+## Networking
+
+Configured AWS Security Group with:
+- SSH access on port 22
+- HTTP access on port 80
+- outbound internet access
