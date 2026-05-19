@@ -72,3 +72,15 @@ Configured AWS Security Group with:
 - SSH access on port 22
 - HTTP access on port 80
 - outbound internet access
+
+## Automated EC2 Provisioning
+
+This project uses Terraform `user_data` to automatically configure the EC2 instance after launch.
+
+The startup script:
+- updates packages
+- installs NGINX
+- enables and starts the NGINX service
+- creates a simple test web page
+
+This demonstrates basic Infrastructure as Code automation for cloud server provisioning.
